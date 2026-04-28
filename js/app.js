@@ -2,13 +2,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Ignition Loader (Subagent 3) ---
-    const loader = document.querySelector('.ignition-loader');
+    // --- Intro Sequence Loader ---
+    const loader = document.querySelector('.intro-loader');
     if (loader) {
+        // Wait 3.5 seconds to build the scene with the video
         setTimeout(() => {
             loader.classList.add('fade-out');
-            setTimeout(() => loader.remove(), 800);
-        }, 1200); // Waits for ignition animation to finish
+            setTimeout(() => loader.remove(), 1200);
+        }, 3500); 
     }
 
     // --- Custom Cursor (Subagent 2) ---
