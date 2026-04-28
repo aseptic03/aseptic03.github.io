@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Ignition Loader -->
+    <div class="ignition-loader">
+        <div class="headlight"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
     <!-- Sticky Header -->
     <header id="main-header">
         <div class="header-container">
@@ -35,9 +43,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-image-container skeleton">
-            <!-- Fast-paced car action image -->
-            <img data-src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Cinematic sports car on dark road" class="lazy hero-img" />
+        <div class="hero-image-container">
+            <video src="https://coverr.co/s3/mp4/Luxury_black_car_on_highway.mp4" autoplay loop muted playsinline class="hero-img"></video>
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content fade-up">
@@ -52,7 +59,7 @@
             <h2 class="section-title fade-up">Selected Works</h2>
             <div class="masonry-grid">
                 
-                <a href="project.html" class="masonry-item fade-up">
+                <a href="project.html" class="masonry-item fade-up" data-video-src="https://videos.pexels.com/video-files/3752531/3752531-uhd_2160_4096_25fps.mp4">
                     <div class="image-wrapper skeleton">
                         <img data-src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drifting car" class="lazy" />
                     </div>
@@ -61,7 +68,7 @@
                     </div>
                 </a>
 
-                <a href="project.html" class="masonry-item fade-up">
+                <a href="project.html" class="masonry-item fade-up" data-video-src="https://videos.pexels.com/video-files/5241853/5241853-uhd_2160_4096_25fps.mp4">
                     <div class="image-wrapper skeleton">
                         <img data-src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Muscle car" class="lazy" />
                     </div>
@@ -70,7 +77,7 @@
                     </div>
                 </a>
 
-                <a href="project.html" class="masonry-item fade-up">
+                <a href="project.html" class="masonry-item fade-up" data-video-src="https://videos.pexels.com/video-files/8098939/8098939-uhd_2160_3840_25fps.mp4">
                     <div class="image-wrapper skeleton">
                         <img data-src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Supercar profile" class="lazy" />
                     </div>
@@ -134,6 +141,8 @@
         </div>
     </footer>
 
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
